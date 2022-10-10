@@ -1,5 +1,18 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-color: aliceblue;
+    min-height: 100%;
+    background-color: darkslateblue;
+}
+
+section {
+    background-color:aqua; 
+    border-radius: 30px;
+    height: 200px;
+    width: 630px;
+    display: block;
 }
 
 h1 {
@@ -11,3 +24,6 @@ h1 {
     top: 2%;
     left: 2%;
 }
+
+
+
