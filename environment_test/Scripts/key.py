@@ -1,4 +1,7 @@
-api_key = "ccdm7m2ad3i9bqco35kg"
+
+#INSERT YOUR API KEY HERE!
+#YOU CAN RECIEVE YOUR API KEY FROM https://finnhub.io
+api_key = ""
 
 TICKER ="MSFT"
 
