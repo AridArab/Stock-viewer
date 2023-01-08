@@ -19,9 +19,9 @@ def display():
     params_price = dict(token=api_key, symbol=ticker, metric='all')
     params_info = dict(token=api_key, symbol=ticker)
     params_lobby = {"token":api_key, "symbol":ticker, "from":DATE_PAST, "to":DATE_NOW}
-    quote_info = finnhub_call(params_info, BASE_URL_QUOTE, ticker)
-    company_info = finnhub_call(params_price, BASE_URL_NAME, ticker)
-    lobby_info = finnhub_call(params_lobby, BASE_URL_LOBBY, ticker)
+    quote_info = finnhub_call(params_info, BASE_URL_QUOTE)
+    company_info = finnhub_call(params_price, BASE_URL_NAME)
+    lobby_info = finnhub_call(params_lobby, BASE_URL_LOBBY)
 
     # Checks to see if the info taken from the api call is correct and viewable, other wise returns a KeyError due to info not being found
     try:
@@ -45,7 +45,7 @@ def index():
 def testing():
     ticker = 'MSFT'
     params_lobby = {"token":api_key, "symbol":ticker, "from":DATE_PAST, "to":DATE_NOW}
-    lobby_info = finnhub_call(params_lobby, BASE_URL_LOBBY, ticker)
+    lobby_info = finnhub_call(params_lobby, BASE_URL_LOBBY)
     return lobby_info.get_full_json()
 
 

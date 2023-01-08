@@ -6,10 +6,9 @@ from urls import BASE_URL, BASE_URL_NAME, BASE_URL_LOBBY, BASE_URL_QUOTE
 
 class finnhub_call():
     '''Class system for calling the api'''
-    def __init__(self, para, url, symbol):
+    def __init__(self, para, url):
         self.para = para
         self.url = url
-        self.symbol = symbol
     
     # Method to get the entire json file for the api
     def get_json(self):
